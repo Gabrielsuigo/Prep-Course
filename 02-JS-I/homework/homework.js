@@ -3,7 +3,7 @@
 const { TestWatcher } = require ("jest");
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "hola";
+const nuevaString = "Hola";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 56;
@@ -134,37 +134,37 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return num ** 2;
+  return Math.pow(num, 2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return math.pow(num, 3);
+  return Math.pow(num, 3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return math.pow(num, exponent);
+  return Math.pow(num, exponent)
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.round(num);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return math.ceil(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return TestWatcher.Random();
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -202,7 +202,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-    return 'hola ' + nombre + '!';
+  return 'Hola ' + nombre + '!';
   
 }
 
@@ -249,7 +249,7 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
    if(letra === "a"|| letra === "e"|| letra === "i"|| letra === "o"|| letra === "u"){
-    return "es vocal"
+    return "Es vocal"
 
    }
     return "Dato incorrecto"
