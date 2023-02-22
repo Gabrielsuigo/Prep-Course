@@ -18,7 +18,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  return edad >= 18? 'Allowed' : 'Not allowed'
+return edad >= 18? 'Allowed' : 'Not allowed'
 }
   
 function conection(status) {
@@ -112,8 +112,8 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
   if(numero % 3 === 0 && numero % 5 === 0) return 'fizzbuzz'
-  if(numero % 5 === 0) return 'buzz'
   if(numero % 3 === 0) return 'fizz'
+  if(numero % 5 === 0) return 'buzz'
   return numero
   
 }
@@ -176,7 +176,7 @@ function tablaDelSeis() {
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero > 99 && numero < 1000) return true;
+  if(numero > 28 && numero < 1000) return true;
   return false;
   }
 

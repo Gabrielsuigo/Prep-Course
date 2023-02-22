@@ -7,9 +7,9 @@ function crearGato (nombre, edad) {
   // Devuelve el objeto
   // Tu código:
   var objeto = {
-    nombre: nombre, // propiedad: valor
-    edad: edad,
-    meow: function(){
+     nombre: nombre, // propiedad: valor
+      edad: edad,
+      meow: function(){
       return 'Meow!'
     }
   };
@@ -26,7 +26,7 @@ function agregarPropiedad (objeto, property) {
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
   objeto[property] = null
-  return objeto
+  return objeto;
 }
 
 function invocarMetodo (objeto, metodo) {
@@ -41,11 +41,13 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  var mult = objetoMisterioso.numeroMisterioso * 5;
-  return mult
-}
- // otro metodo para hacerlo. 
- // return objetoMisterioso.numeroMmisterioso * 5 
+  
+    return objetoMisterioso.numeroMisterioso * 5
+    
+    //       otro metodo para hacerlo. 
+    // var multiplicar = objetoMisterioso.numeroMisterioso * 5;
+    // return multiplicar
+  }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad
@@ -62,7 +64,7 @@ function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-  let objeto = {
+  var objeto = {
     nombre: nombre,
     email: email,
     password: password,
@@ -80,7 +82,7 @@ function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario.email) {
+  if (usuario.email) { // si (valor.propiedad)
     return true
   }else{
     return false
@@ -95,15 +97,15 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto.hasOwnProperty(propiedad)){
+  if (objeto[propiedad]) {
     return true
   }
-  return false
+    return false
   // otra forma de ejercitar este ejercicio, es la siguiente:
   // return objeto.hasOwnProperty(propiedad);
 }
-  // if (objeto.propiedad)
-  // if (objeto[propiedad])  
+  // if (objeto.propiedad)  dot notation
+  // if (objeto[propiedad]) break notation
 
 function verificarPassword (usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
