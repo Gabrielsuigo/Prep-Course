@@ -113,12 +113,12 @@ function verificarPassword (usuario, password) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (usuario.password === password) {
-    return true
+    return true;
   }
-  else {
-    return false
+   return false;
+  
 
-  }
+  
   // otra opcion para resolver seria:
   // return (usuario.password === password);
   //   if   (usuario[password] === password);

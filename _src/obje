@@ -1,0 +1,23 @@
+//var libro = {autor: 'Borges', genero: 'policial', año: 1990, nacionalidad: 'Argentino'};
+//var TieneSuPropiedad = libro.hasOwnProperty('año');
+ //    console.log(TieneSuPropiedad);
+//var TodaSuPropiedad = Object(libro);
+    //console.log(TodaSuPropiedad);
+    //var tabaqueria = {armadores: 7, encendedores: 195, petacas: 5};
+    //for(var prop in tabaqueria){
+        //console.log('Producto: ' + prop);
+       // console.log('Cantidad: ' + tabaqueria[prop]);
+    //};
+
+    // function
+    
+    function automotriz (auto){
+      auto.marca = 'Honda'
+    }
+     var MiAuto = {marca: 'ford', modelo:'mustang', año: 1990};
+     var a, b;
+     a = MiAuto.marca;
+     automotriz(MiAuto);
+     //b = MiAuto.marca;
+     
+     console.log (MiAuto);    

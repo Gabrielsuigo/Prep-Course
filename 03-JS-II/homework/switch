@@ -1,0 +1,8 @@
+
+function perro(Raza) {
+    switch(Raza){
+        case 'Perro':
+    }
+    console.log('Golden');
+        
+};
