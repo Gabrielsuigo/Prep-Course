@@ -1,0 +1,69 @@
+var listadeCompras = [1, 2]
+listadeCompras[1] = ['Manzana', 'lechuga'];
+listadeCompras[3] = ['naranjas', 'peras', 'kiwis']
+
+//var elementoDelArray = listadeCompras[3]
+//console.log(elementoDelArray);
+
+
+var colores = ['rojo', 'negro', 'blanco'];
+colores.push('verde', 'azul');
+colores.unshift('violeta')
+console.log(colores);
+
+
+
+
+var palabra = 'henri'
+palabraSeparada = palabra.split('')
+console.log(palabraSeparada)
+palabraSeparada.pop()
+palabraSeparada.push('y');
+  //console.log(palabraSeparada)
+  var unirPalabra = palabraSeparada.join('')
+  console.log(unirPalabra);
+
+
+  var numeros = [1, 2, 3, 4]
+  numeros.forEach((num) => console.log(num))
+  numeros.forEach((num) => {
+    if(num === 1){
+       console.log(num);
+    }
+  });
+
+
+  //var masTres = numeros.map((num) => {
+   // return num + 3;
+//});
+//console.log(masTres);
+    
+
+var numeros = [1, 5, 6, 78, 104];
+cumpleCondicion = numeros.every((num) => { num == 6});
+  console.log(cumpleCondicion);
+
+
+
+
+
+  function encontrarLetraH(string){
+    var letra = string.split('');
+    for(var i=0; i<letra.length; i++){
+      if(letra[i] === 'H'){
+        console.log('si contiene H');
+      }
+    }
+  }
+  encontrarLetraH('Henry');
+  encontrarLetraH('JavaScript');
+
+
+  var arr = [];
+  while(arr.length < 2){ 
+    arr.push('BOCA JUNIORS vs RIVER PLATE' + ' - ' + 'INDEPENDIENTE vs RACING' );
+  }
+  console.log(arr);
+    
+
+
