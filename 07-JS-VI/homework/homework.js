@@ -44,7 +44,7 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
   // opcion 1 forEach
-  //array.forEach(valores => cb(valores))
+  
      
   
 // for (let i = 0; i < array.length; i++) {
@@ -70,6 +70,7 @@ function map(array, cb) {
   // returnMap.push(cb(array[i]))
   // } 
   // return returnMap;
+  //     opcion 2
  return array.map(elem => cb(elem));
 }
 
@@ -82,7 +83,7 @@ function filter(array) {
   //if (array[i][0] === 'a') filterR.push(array[i])
   //}
   //return filterR;
-    return array.filter(elem => elem[0] === 'a')
+    return array.filter(elemento => elemento[0] === 'a')
 }
 
 // No modificar nada debajo de esta línea

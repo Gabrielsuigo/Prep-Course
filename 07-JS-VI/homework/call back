@@ -1,0 +1,21 @@
+function primero (segundo) {
+    setTimeout (function() {
+        console.log('PRIMERO');       
+            segundo()
+    }, 3000);
+}
+
+    
+        
+
+function segundo (){
+    console.log('SEGUNDO')
+}   
+
+primero(segundo)
+//segundo()
+
+//la funcion callback es una funcion q se pasa a otra funcion como argumento
+//call back: hace primero q se ejecute la primer funcion
+// luego sigue con la siguiente funcion
+
